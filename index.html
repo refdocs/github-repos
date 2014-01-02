@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+
+  <meta charset="UTF-8">
+  <title>GitHub Repos</title>
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="js/assets/base.css">
+
+  <!-- Demo CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <a href="https://github.com/refdocs/github-repos">
+    <img class="github-ribbon" src="img/github-ribbon.png" alt="Fork me on GitHub">
+  </a>
+
+  <div class="title">
+    <h1>GitHub Repos</h1>
+    <p>My favorite Github Repositories.</p>
+  </div>
+
+  <div class="projects">
+    <div data-repo="airbnb/javascript"></div>
+    <div data-repo="nathansmith/javascript-quiz"></div>
+    <div data-repo="jquery-boilerplate/jquery-boilerplate"></div>
+    <div data-repo="mklabs/jquery-startr"></div>
+    <div data-repo="nuweb/jQuerySnippets"></div>
+    <div data-repo="h5bp/html5-boilerplate"></div>
+  </div>
+
+  <p class="credits">Made by <a href="http://zenorocha.com">Zeno Rocha</a>.</p>
+
+  <img id="github-logo" src="img/github-cat.png" alt="Github Cat" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="js/jquery.github.min.js"></script>
+
+  <script>
+    $('[data-repo]').github();
+  </script>
+
+</body>
+</html>
